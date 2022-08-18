@@ -105,3 +105,20 @@ const expectedFullName = "BruceWayne" //throw error
 if (actualFullName !== expectedFullName) {
   throw new Error(`${actualFullName} is not equal to ${expectedFullName}`)
 }
+
+## test
+test(name, fn, timeout)
+
+=========================================================
+test('renders learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/learn react/i);
+  expect(linkElement).toBeInTheDocument();
+});
+=========================================================
+
+The first argument is the test name used to identify the test.
+
+The second argument is a function that contains the expectation to test.
+
+The third argument is timeout which is an optional argument for specifying how long to wait before aborting the test. The default timeout value is 5 seconds.
