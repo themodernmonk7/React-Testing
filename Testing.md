@@ -122,3 +122,14 @@ The first argument is the test name used to identify the test.
 The second argument is a function that contains the expectation to test.
 
 The third argument is timeout which is an optional argument for specifying how long to wait before aborting the test. The default timeout value is 5 seconds.
+
+## Test Driven Development (TDD)
+Test driven development is a software development process where you write tests before writing the actual software code.
+
+Once the test have been written, you then write the code to ensure the tests pass.
+
+1. Create tests that verify the functionality of a specific feature.
+2. Write software code that will run the tests successfully when re-executed.
+3. Refactor the code for optimization while ensuring the tests continue to pass.
+
+Also called red-green testing as all tests go from a red failed state to a green passes state.
