@@ -91,3 +91,17 @@ Instead we are testing how the component behaves when a user interacts with it.
 RTL will not care if you add 4+4 or 5+3 to display the number 8.
 
 Refactoring will not affect your test as long as the end result is the same.
+
+## What is Test?
+const getFullName = (fname, lname) => {
+  return `${fname} ${lname}`
+}
+
+const actualFullName = getFullName("Bruce", "Wayne")
+const expectedFullName = "Bruce Wayne" //correct
+const expectedFullName = "BruceWayne" //throw error
+
+
+if (actualFullName !== expectedFullName) {
+  throw new Error(`${actualFullName} is not equal to ${expectedFullName}`)
+}
