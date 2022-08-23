@@ -109,13 +109,13 @@ if (actualFullName !== expectedFullName) {
 ## test
 test(name, fn, timeout)
 
-=========================================================
+Example: 
+
 test('renders learn react link', () => {
   render(<App />);
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });
-=========================================================
 
 The first argument is the test name used to identify the test.
 
@@ -138,3 +138,11 @@ Also called red-green testing as all tests go from a red failed state to a green
 Watch mode is an option that we can pass to Jest asking to watch files that have changed since the last commit and execute tests related only to those changed files.
 
 An optimization designed to make your tests run fast regardless of how many tests you have.
+
+## Filtering Tests
+
+// Run all test
+// Run test only in changed files
+// Run test by file name
+// Run test by test name
+// test.only and test.skip for filter test (specific test)

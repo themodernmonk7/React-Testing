@@ -12,12 +12,7 @@ test("Greet renders correctly", () => {
   expect(textElement).toBeInTheDocument
 })
 
-// Run all test
-// Run test only in changed files
-// Run test by file name
-// Run test by test name
-// test.only and test.skip for filter test (specific test)
-test.only("Greet renders with a name", () => {
+test("Greet renders with a name", () => {
   render(<Greet name="Saurav" />)
   const textElement = screen.getByText("Hello Saurav")
   expect(textElement).toBeInTheDocument()
