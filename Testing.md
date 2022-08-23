@@ -146,3 +146,8 @@ An optimization designed to make your tests run fast regardless of how many test
 // Run test by file name
 // Run test by test name
 // test.only and test.skip for filter test (specific test)
+
+## describe
+describe(name, fn)
+The first argument is the group name
+The second argument is a function that contains the expectations to test.
