@@ -151,3 +151,10 @@ An optimization designed to make your tests run fast regardless of how many test
 describe(name, fn)
 The first argument is the group name
 The second argument is a function that contains the expectations to test.
+
+## Filename Conventions
+With CRA jest will look for test files with any of the following naming conventions.
+  - Files with .test.js or test.tsx suffix.
+  - Files with .spec.js or .spec.tsx suffix.
+  - Files with .js or .tsx suffix in __tests__ folders.
+and this can be located at any depth in the source folder the Recommendation is to always put your tests next to the code they are testing so that relative imports are shorter.
