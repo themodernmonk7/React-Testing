@@ -158,3 +158,11 @@ With CRA jest will look for test files with any of the following naming conventi
   - Files with .spec.js or .spec.tsx suffix.
   - Files with .js or .tsx suffix in __tests__ folders.
 and this can be located at any depth in the source folder the Recommendation is to always put your tests next to the code they are testing so that relative imports are shorter.
+
+## Code Coverage
+A metric that can help you understand how much of your software code is tested.
+  - Statement coverage: how many of the statements in the software code have been executed.
+  - Branches coverage: how many of the branches of the control structures (if statements for instance) have been executed.
+  - Function coverage: how may of the functions defined have been called.
+  - Line coverage: how may of lines of source code have been tested.
+  
