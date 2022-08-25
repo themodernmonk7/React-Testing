@@ -165,4 +165,14 @@ A metric that can help you understand how much of your software code is tested.
   - Branches coverage: how many of the branches of the control structures (if statements for instance) have been executed.
   - Function coverage: how may of the functions defined have been called.
   - Line coverage: how may of lines of source code have been tested.
-  
+
+## Assertions
+When writing tests, we often need to check that values meet certain conditions.
+Assertions decide if a test passes or fails.
+
+### Expect
+expect(value)
+With jest assertions are carried out with the global expect method, this method accepts a value as its argument. 
+The argument should be the value that your code produces.
+Typically, you will use expect along with a "matcher" function to assert something about a value.
+A matcher can optionally accept an argument which is the correct expected value.
