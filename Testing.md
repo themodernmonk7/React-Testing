@@ -187,3 +187,28 @@ A matcher can optionally accept an argument which is the correct expected value.
   - Implementation details
   - Third party code
   - Code that is not important from a user point of view
+
+## React Testing Library (RTL) Queries
+Every test we write generally involves the following basic steps
+1. Render the component. (render method from RTL)
+2. Find an element rendered by the component. (responsibility of RTL Queries)
+3. Assert against the element found in step 2 which will pass or fail the test. (we use expect, passing in a value and combine it with a matcher function from jest or jest dom)
+
+To render the component, we use the render method from RTL
+For assertion, we user expect passing in a value and combine it with a matcher function from jest or jest-dom
+
+Queries are the methods that Testing Library provides to find elements on the page
+
+To find a single element on the page, we have
+    - getBy..
+    - queryBy..
+    - findBy..
+
+To find multiple elements on the page, we have
+    - getAllBy..
+    - queryAllBy
+    - findAllBy..
+The suffix (...) can be one of Role, LabelText, PlaceholderText, Text, DisplayValue, AltText, Title and finally TestId
+
+## getBy... queries
+getBy.. class of queries return the matching node for a query, and throw a descriptive error if no elements match or if more than one match is found.
