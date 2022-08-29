@@ -176,3 +176,14 @@ With jest assertions are carried out with the global expect method, this method 
 The argument should be the value that your code produces.
 Typically, you will use expect along with a "matcher" function to assert something about a value.
 A matcher can optionally accept an argument which is the correct expected value.
+
+## What to test?
+  - Test component renders
+  - Test component renders with props
+  - Test component renders in different states
+  - Test component reacts to events
+
+## What not to test?
+  - Implementation details
+  - Third party code
+  - Code that is not important from a user point of view
