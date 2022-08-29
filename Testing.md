@@ -190,9 +190,14 @@ A matcher can optionally accept an argument which is the correct expected value.
 
 ## React Testing Library (RTL) Queries
 Every test we write generally involves the following basic steps
-1. Render the component. (render method from RTL)
-2. Find an element rendered by the component. (responsibility of RTL Queries)
-3. Assert against the element found in step 2 which will pass or fail the test. (we use expect, passing in a value and combine it with a matcher function from jest or jest dom)
+1. Render the component. (render method from RTL) 
+ - E.g: render(<App/>)
+
+2. Find an element rendered by the component. (responsibility of RTL Queries) 
+  - E.g: const linkElement = screen.getByText(/This is React Testing Tutorial)
+
+3. Assert against the element found in step 2 which will pass or fail the test. (we use expect, passing in a value and combine it with a matcher function from jest or jest dom) 
+  - E.g: expect(linkElement).toBeInTheDocument()
 
 To render the component, we use the render method from RTL
 For assertion, we user expect passing in a value and combine it with a matcher function from jest or jest-dom
