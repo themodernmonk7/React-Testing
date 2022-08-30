@@ -24,32 +24,32 @@ Advantages
     4. Gives confidence when shipping software.
 
 ## Course Structure
-Jest and React Testing Library
-Fundamentals of writing a test
-Test components with user interactions
-Test components wrapped in a provider
-Test components with mocking
-Static analysis testing
+- Jest and React Testing Library
+- Fundamentals of writing a test
+- Test components with user interactions
+- Test components wrapped in a provider
+- Test components with mocking
+- Static analysis testing
 
 ##  Prerequisites
-React fundamentals
-TypeScript fundamentals
+- React fundamentals
+- TypeScript fundamentals
 
 ## Jest vs React Testing Library (RTL)
-    - Jest
+  - Jest
         👉 Jest is a javascript testing framework
         👉 Jest is a test runner that finds tests, runs the tests, determines whether the tests passed or failed and reports in a human readable manner
-    
-    - RTL
+
+  - RTL
         👉 JavaScript testing utility that provides virtual DOM for testing React components
         👉 React Testing Library provides a virtual DOM which we can use to interact with and verify the behavior of a react component
         👉 Testing Library is infact a family of packages which helps test UI components
         👉 The core library is called DOM Testing library and RTL is simply a wrapper around this core library to test React applications in an easier way
 
 ## Types of Tests
-Unit tests
-Integration tests
-E2E test
+- Unit tests
+- Integration tests
+- E2E test
 
 ## Unit Tests
 Focus is on testing the individual building blocks of an application such as a class or a function or a component.
@@ -93,9 +93,12 @@ RTL will not care if you add 4+4 or 5+3 to display the number 8.
 Refactoring will not affect your test as long as the end result is the same.
 
 ## What is Test?
+
+```
 const getFullName = (fname, lname) => {
   return `${fname} ${lname}`
 }
+
 
 const actualFullName = getFullName("Bruce", "Wayne")
 const expectedFullName = "Bruce Wayne" //correct
@@ -105,17 +108,22 @@ const expectedFullName = "BruceWayne" //throw error
 if (actualFullName !== expectedFullName) {
   throw new Error(`${actualFullName} is not equal to ${expectedFullName}`)
 }
+```
 
 ## test
+```
 test(name, fn, timeout)
+```
 
 Example: 
 
+```
 test('renders learn react link', () => {
   render(<App />);
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });
+```
 
 The first argument is the test name used to identify the test.
 
@@ -173,8 +181,11 @@ Assertions decide if a test passes or fails.
 ### Expect
 expect(value)
 With jest assertions are carried out with the global expect method, this method accepts a value as its argument. 
+
 The argument should be the value that your code produces.
+
 Typically, you will use expect along with a "matcher" function to assert something about a value.
+
 A matcher can optionally accept an argument which is the correct expected value.
 
 ## What to test?
@@ -191,15 +202,16 @@ A matcher can optionally accept an argument which is the correct expected value.
 ## React Testing Library (RTL) Queries
 Every test we write generally involves the following basic steps
 1. Render the component. (render method from RTL) 
- - E.g: render(<App/>)
+ - E.g: ```render(<App/>)```
 
 2. Find an element rendered by the component. (responsibility of RTL Queries) 
-  - E.g: const linkElement = screen.getByText(/This is React Testing Tutorial)
+  - E.g: ```const linkElement = screen.getByText(/This is React Testing Tutorial)```
 
 3. Assert against the element found in step 2 which will pass or fail the test. (we use expect, passing in a value and combine it with a matcher function from jest or jest dom) 
-  - E.g: expect(linkElement).toBeInTheDocument()
+  - E.g: ```expect(linkElement).toBeInTheDocument()```
 
 To render the component, we use the render method from RTL
+
 For assertion, we user expect passing in a value and combine it with a matcher function from jest or jest-dom
 
 Queries are the methods that Testing Library provides to find elements on the page
@@ -218,7 +230,7 @@ The suffix (...) can be one of Role, LabelText, PlaceholderText, Text, DisplayVa
 ### getBy... queries
 getBy.. class of queries return the matching node for a query, and throw a descriptive error if no elements match or if more than one match is found.
 
-### getByRole
+#### getByRole
 getByRole queries for elements with the given role.
 
 Role refers to the ARIA (Accessible Rich Internet Applications) role which provides semantic meaning to content to ensure people using assistive technologies are able to use them.
@@ -231,10 +243,11 @@ If you're working with elements that do not have a default role or if you want t
 
 To use an anchor element as a button in the navbar, you can add role='button'.
 
-### getByRole Options
+##### getByRole Options
   - name
   - level
-The accessible name is for simple cases equal to
+
+The accessible name is for simple cases equal to -
 1. the label of a form element
 2. the text content of a button or
 3. the value of the aria-label attribute
@@ -245,7 +258,7 @@ There are few more options that we can use with the getByRole query. (Go through
   - checked
   - pressed
 
-### getByLabelText
+#### getByLabelText
 getByLabelText will search for the label that matches the given text, then find the element associated with that label.
 
 #### getByPlaceholderText
