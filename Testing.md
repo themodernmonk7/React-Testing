@@ -241,9 +241,12 @@ The accessible name is for simple cases equal to
 
 There are few more options that we can use with the getByRole query. (Go through the documentation for more information about each of them)
   - hidden
-  - selected
+  - selected 
   - checked
   - pressed
 
 ### getByLabelText
 getByLabelText will search for the label that matches the given text, then find the element associated with that label.
+
+#### getByPlaceholderText
+getByPlaceholderText will search for all elements with a placeholder attribute and find one that matches the given text.
