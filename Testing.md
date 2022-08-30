@@ -244,3 +244,6 @@ There are few more options that we can use with the getByRole query. (Go through
   - selected
   - checked
   - pressed
+
+### getByLabelText
+getByLabelText will search for the label that matches the given text, then find the element associated with that label.
