@@ -215,5 +215,18 @@ To find multiple elements on the page, we have
     - findAllBy..
 The suffix (...) can be one of Role, LabelText, PlaceholderText, Text, DisplayValue, AltText, Title and finally TestId
 
-## getBy... queries
+### getBy... queries
 getBy.. class of queries return the matching node for a query, and throw a descriptive error if no elements match or if more than one match is found.
+
+### getByRole
+getByRole queries for elements with the given role.
+
+Role refers to the ARIA (Accessible Rich Internet Applications) role which provides semantic meaning to content to ensure people using assistive technologies are able to use them.
+
+By default, many semantic elements in HTML have a role.
+
+button element has a button role, anchor element has a link role, h1 to h6 elements have a heading role, checkboxes have a checkbox role, radio buttons have a radio role and so on.
+
+If you're working with elements that do not have a default role or if you want to specify a different role, the role attribute can be used to add the desired tole.
+
+To use an anchor element as a button in the navbar, you can add role='button'.
