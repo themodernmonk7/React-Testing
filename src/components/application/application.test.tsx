@@ -56,5 +56,9 @@ describe("Application", () => {
     // 4. getByText method
     const paragraphElement = screen.getByText("All fields are mandatory.")
     expect(paragraphElement).toBeInTheDocument()
+
+    // 6. getByAltText method
+    const imageElement = screen.getByAltText("A person with a laptop")
+    expect(imageElement).toBeInTheDocument()
   })
 })

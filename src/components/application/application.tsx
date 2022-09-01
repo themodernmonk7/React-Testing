@@ -7,6 +7,7 @@ const Application = () => {
       <h1>Job Application Form</h1>
       <h2>Section 1</h2>
       <p>All fields are mandatory.</p>
+      <img src="https://via.placeholder.com/150" alt="A person with a laptop" />
       <form>
         <div>
           <label htmlFor="name">Name</label>
