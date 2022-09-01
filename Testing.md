@@ -263,3 +263,9 @@ getByLabelText will search for the label that matches the given text, then find 
 
 #### getByPlaceholderText
 getByPlaceholderText will search for all elements with a placeholder attribute and find one that matches the given text.
+
+#### getByText
+getByText will search for all elements that have a text node with textContent matching the given text
+
+Typically, you'd use this to find paragraph, div or span elements.
+

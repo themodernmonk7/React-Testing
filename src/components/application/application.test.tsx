@@ -49,5 +49,8 @@ describe("Application", () => {
     const submitButtonElement = screen.getByRole("button")
     expect(submitButtonElement).toBeInTheDocument()
 
+    // 4. getByText method
+    const paragraphElement = screen.getByText("All fields are mandatory.")
+    expect(paragraphElement).toBeInTheDocument()
   })
 })
