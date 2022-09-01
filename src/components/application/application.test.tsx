@@ -60,5 +60,9 @@ describe("Application", () => {
     // 6. getByAltText method
     const imageElement = screen.getByAltText("A person with a laptop")
     expect(imageElement).toBeInTheDocument()
+
+    // 7. getByTitle method
+    const closeElement = screen.getByTitle("close")
+    expect(closeElement).toBeInTheDocument()
   })
 })

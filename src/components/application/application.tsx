@@ -6,6 +6,7 @@ const Application = () => {
       {/* Use Level option in the test, that is specific to the heading role */}
       <h1>Job Application Form</h1>
       <h2>Section 1</h2>
+      <span title="close">X</span>
       <p>All fields are mandatory.</p>
       <img src="https://via.placeholder.com/150" alt="A person with a laptop" />
       <form>

@@ -277,4 +277,7 @@ getByAltText will return the element that has the given alt text.
 
 This method only supports elements which accept an alt attribute like <img>, <input>, <area> or custom HTML elements.
 
+#### getByTitle
+getByTitle returns the element that has the matching title attribute.
+
 
