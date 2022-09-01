@@ -37,14 +37,14 @@ Advantages
 
 ## Jest vs React Testing Library (RTL)
   - Jest
-        👉 Jest is a javascript testing framework
-        👉 Jest is a test runner that finds tests, runs the tests, determines whether the tests passed or failed and reports in a human readable manner
+    - Jest is a javascript testing framework
+    - Jest is a test runner that finds tests, runs the tests, determines whether the tests passed or failed and reports in a human readable manner
 
   - RTL
-        👉 JavaScript testing utility that provides virtual DOM for testing React components
-        👉 React Testing Library provides a virtual DOM which we can use to interact with and verify the behavior of a react component
-        👉 Testing Library is infact a family of packages which helps test UI components
-        👉 The core library is called DOM Testing library and RTL is simply a wrapper around this core library to test React applications in an easier way
+      - JavaScript testing utility that provides virtual DOM for testing React components
+      - React Testing Library provides a virtual DOM which we can use to interact with and verify the behavior of a react component
+      -  Testing Library is infact a family of packages which helps test UI components
+      -  The core library is called DOM Testing library and RTL is simply a wrapper around this core library to test React applications in an easier way
 
 ## Types of Tests
 - Unit tests
@@ -230,7 +230,7 @@ The suffix (...) can be one of Role, LabelText, PlaceholderText, Text, DisplayVa
 ### getBy... queries
 getBy.. class of queries return the matching node for a query, and throw a descriptive error if no elements match or if more than one match is found.
 
-#### getByRole
+#### 1. getByRole
 getByRole queries for elements with the given role.
 
 Role refers to the ARIA (Accessible Rich Internet Applications) role which provides semantic meaning to content to ensure people using assistive technologies are able to use them.
@@ -258,29 +258,29 @@ There are few more options that we can use with the getByRole query. (Go through
   - checked
   - pressed
 
-#### getByLabelText
+#### 2. getByLabelText
 getByLabelText will search for the label that matches the given text, then find the element associated with that label.
 
-#### getByPlaceholderText
+#### 3. getByPlaceholderText
 getByPlaceholderText will search for all elements with a placeholder attribute and find one that matches the given text.
 
-#### getByText
+#### 4. getByText
 getByText will search for all elements that have a text node with textContent matching the given text
 
 Typically, you'd use this to find paragraph, div or span elements.
 
-#### getByDisplayValue
+#### 5. getByDisplayValue
 getByDisplayValue returns the input, textarea, or select element that has the matching display value.
 
-#### getByAltText
+#### 6. getByAltText
 getByAltText will return the element that has the given alt text.
 
-This method only supports elements which accept an alt attribute like <img>, <input>, <area> or custom HTML elements.
+This method only supports elements which accept an alt attribute like ```<img>, <input>, <area>``` or custom HTML elements.
 
-#### getByTitle
+#### 7. getByTitle
 getByTitle returns the element that has the matching title attribute.
 
-#### getByTestId
+#### 8. getByTestId
 getByTestId returns the element that has the matching data-testid attribute.
 
 ### Priority Order for Queries
