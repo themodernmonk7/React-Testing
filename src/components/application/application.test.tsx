@@ -64,5 +64,9 @@ describe("Application", () => {
     // 7. getByTitle method
     const closeElement = screen.getByTitle("close")
     expect(closeElement).toBeInTheDocument()
+
+    // 8. getByTestId method
+    const customElement = screen.getByTestId("custom-element")
+    expect(customElement).toBeInTheDocument()
   })
 })
