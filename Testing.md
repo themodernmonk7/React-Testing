@@ -269,3 +269,5 @@ getByText will search for all elements that have a text node with textContent ma
 
 Typically, you'd use this to find paragraph, div or span elements.
 
+#### getByDisplayValue
+getByDisplayValue returns the input, textarea, or select element that has the matching display value.
