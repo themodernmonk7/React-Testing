@@ -283,3 +283,19 @@ getByTitle returns the element that has the matching title attribute.
 #### getByTestId
 getByTestId returns the element that has the matching data-testid attribute.
 
+### Priority Order for Queries
+"Your test should resemble how users interact with your code (component, page, etc.) as much as possible."
+
+1. getByRole 
+    - Top preference for everything.
+2. getByLabelText 
+    - Good for form fields.
+3. getByPlaceholderText
+4. getByText 
+    - This method can be used to find non-interactive elements like div, spans and paragraphs.
+5. getByDisplayValue
+6. getByAltText
+7. getByTitle
+8. getByTestId
+
+This is the order of priority when using react testing library methods to find elements in the virtual DOM.
