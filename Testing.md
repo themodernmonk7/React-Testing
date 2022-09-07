@@ -299,3 +299,17 @@ getByTestId returns the element that has the matching data-testid attribute.
 8. getByTestId
 
 This is the order of priority when using react testing library methods to find elements in the virtual DOM.
+
+### RTL getAllBy Queries
+
+Find multiple elements in the DOM.
+
+getAllBy returns an array of all matching nodes for a query, and throws an error if no elements match.
+ -  getAllByRole
+ - getAllByLabelText
+ - getAllByPlaceholderText
+ - getAllByText
+ - getAllByDisplayValue
+ - getAllByAltText
+ - getAllByTitle
+ - getAllByTestId
