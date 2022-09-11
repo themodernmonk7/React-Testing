@@ -347,3 +347,13 @@ TextMatch represents a type which can be either a
     - (content?: string, element?: Element | null) => boolean
     - <div>Hello World </div>
     - ```screen.getByText((content) => content.startsWith('Hello'))```
+
+#### queryBy and queryAllBy
+
+queryBy
+  - Returns the matching node for a query, and return null if no elements match.
+  - Useful for asserting an element that is not present.
+  - Throws an error if more than one match is found.
+
+queryAllBy
+ - Returns an array of all matching nodes for a query, and return an empty array if no elements match.
