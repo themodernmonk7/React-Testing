@@ -313,3 +313,37 @@ getAllBy returns an array of all matching nodes for a query, and throws an error
  - getAllByAltText
  - getAllByTitle
  - getAllByTestId
+
+### RTL queries used so far
+
+```
+const pageHeading = screen.getByRole("heading")
+const nameElement2 = screen.getByLabelText("Name"
+const nameElement3 = screen.getByPlaceholderText("Fullname")
+const paragraphElement = screen.getByText("All fields are mandatory.")
+const nameElement4 = screen.getByDisplayValue("Saurav")
+const imageElement = screen.getByAltText("A person with a laptop")
+const closeElement = screen.getByTitle("close")
+const customElement = screen.getByTestId("custom-element")
+const listItemElements = screen.getAllByRole("listitem")
+```
+
+#### TextMatch
+TextMatch represents a type which can be either a 
+
+ - string
+    - ```<div>Hello World </div>```
+    - ```screen.getByText('Hello World')``` //full string match
+    - ```screen.getByText('llo Worl', {exact: false})``` //substring match
+    - ```screen.getByText('hello world', {exact: false})``` //ignore case
+
+ - regex
+    - ```<div> Hello World </div>```
+    - ```screen.getByText(/World/)``` //substring match
+    - ```screen.getByText(/world/i)``` //substring match, ignore case
+    - ```screen.getByText(/^hello world$/i)``` //full string match, ignore case
+
+ - function
+    - (content?: string, element?: Element | null) => boolean
+    - <div>Hello World </div>
+    - ```screen.getByText((content) => content.startsWith('Hello'))```
