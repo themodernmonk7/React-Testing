@@ -378,3 +378,10 @@ findBy
 findByAll
   - Returns a promise which resolves to an array of elements when any elements are found which match the given query.
   - The promise is rejected if no elements are found after a default timeout of 1000ms.
+
+### Manual Queries
+  - You can use the regular querySelector DOM API to find elements
+```const {container} = render(<MyComponent>)```
+```const foo = container.querySelector('[data-foo = "bar"]')```
+  - Using querySelector to query by class, id etc is not recommended because those attributes are invisible to the user. 
+  - You should always try to query using the three query types provided by RTL.
