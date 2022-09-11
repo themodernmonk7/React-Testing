@@ -385,3 +385,24 @@ findByAll
 ```const foo = container.querySelector('[data-foo = "bar"]')```
   - Using querySelector to query by class, id etc is not recommended because those attributes are invisible to the user. 
   - You should always try to query using the three query types provided by RTL.
+
+## User Interactions
+A click using a mouse or a keypress using a keyboard.
+Software has to respond to such interactions.
+Tests should ensure the interactions are handled as expected.
+
+### user-event
+A companion library for Testing Library that stimulates user interactions by dispatching the events that would happen if the interaction took place in a browser.
+
+It is the recommended way to test user interactions with RTL.
+
+### fireEvent vs user-event
+fireEvent is a method from RTL which is used to dispatch DOM events.
+
+user-event simulates full interactions, which may fire multiple events and do additional checks along the way.
+
+For example, we can dispatch the change event on an input filed using fireEvent.
+
+When a user type into a text box, the element has to be focused, and then keyboard and input events are fired and the selection and value on the element are manipulated as they type.
+
+user-event allows you to describe a user interaction instead of a concrete event. It adds visibility and intractability checks along the way and manipulates the DOM just like a user interaction in the browser would. It factors in that the browser e.g. wouldn't let a user click a hidden element or type in a disabled text box.
