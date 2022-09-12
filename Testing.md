@@ -406,3 +406,18 @@ For example, we can dispatch the change event on an input filed using fireEvent.
 When a user type into a text box, the element has to be focused, and then keyboard and input events are fired and the selection and value on the element are manipulated as they type.
 
 user-event allows you to describe a user interaction instead of a concrete event. It adds visibility and intractability checks along the way and manipulates the DOM just like a user interaction in the browser would. It factors in that the browser e.g. wouldn't let a user click a hidden element or type in a disabled text box.
+
+### Pointer Interactions
+  - Convenience APIs
+    - click()
+    - dblClick()
+    - tripleClick()
+    - hover()
+    - unhover()
+  
+  - Pointer APIs
+    - ```pointer({keys: '[MouseLeft]'})```
+    - ```pointer({keys: '[MouseLeft][MouseRight]'})```
+    - ```pointer('[MouseLeft][MouseRight]')```
+    - ```pointer('[MouseLeft>]')```
+    - ```pointer('[/MouseLeft]')```
