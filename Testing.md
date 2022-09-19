@@ -493,7 +493,7 @@ user-event allows you to describe a user interaction instead of a concrete event
     - ```keyboard('foo')``` //translate to: f, o, o
     - ```keyboard('{Shift>}A {/Shift}')``` //translate to: Shift(down), A, Shift(up)
 
-### Section Summary
+### Section Summary (Test components with user interactions)
 - user-event library
 - CRA install user-event but needs upgrading
 - Mouse and keyboard interactions with Counter component
@@ -501,3 +501,9 @@ user-event allows you to describe a user interaction instead of a concrete event
 - Keyboard type and tab events
 - Convenience APIs, utility APIs, clipboard APIs
 - Pointer and keyboard APIs
+
+### Section Summary (Test components wrapped in a provider) 
+- Wrapper option for providers
+- Custom render function
+- Test custom react hooks
+- act utility
