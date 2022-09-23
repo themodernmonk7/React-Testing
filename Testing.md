@@ -507,3 +507,8 @@ user-event allows you to describe a user interaction instead of a concrete event
 - Custom render function
 - Test custom react hooks
 - act utility
+
+### Section Summary (Test components with mocking)
+- Mock function with jest
+- Mock HTTP requests with MSW
+- Handle error responses with MSW

@@ -8,6 +8,7 @@ export const Users = () => {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((res) => res.json())
       .then((data) => setUsers(data.map((user: { name: string }) => user.name)))
+      .catch(() => setError("Error fetching users"))
   }, [])
 
   return (
