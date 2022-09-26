@@ -512,3 +512,23 @@ user-event allows you to describe a user interaction instead of a concrete event
 - Mock function with jest
 - Mock HTTP requests with MSW
 - Handle error responses with MSW
+
+## Static analysis testing
+Process of verifying that your code meets certain expectations without actually running it.
+- Ensure consistent style and formatting
+- Check for common mistakes and possible bugs
+- Limit the complexity of code and
+- Verify type consistency.
+
+All types of test (Unit test, functional test, Integration test etc.) run the code and then compare the outcome against known expected outputs to see if everything works OK.
+
+Static testing analyses aspects such as readability, consistency, error handling, type checking, and alignment with best practices.
+
+Testing checks if your code works or not, whereas static analysis checks if it is written well or not. 
+
+### Static analysis testing tools
+- TypeScript
+- ESlint
+- Prettier
+- Husky
+- lint-stages
