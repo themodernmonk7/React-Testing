@@ -537,3 +537,6 @@ Testing checks if your code works or not, whereas static analysis checks if it i
 ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs.
 
 CRA by default install ESLint into the project. All you have to do is install the eslint vs code extension.
+
+#### Prettier
+Prettier is an opinionated code formatter that ensures that all outputted code conforms to a consistent style.
