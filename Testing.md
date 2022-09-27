@@ -540,3 +540,6 @@ CRA by default install ESLint into the project. All you have to do is install th
 
 #### Prettier
 Prettier is an opinionated code formatter that ensures that all outputted code conforms to a consistent style.
+
+#### Husky
+Husky is a tool that helps improve your commits and more.

@@ -25,7 +25,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --ignore-path .gitignore --write \"**/*.{ts, tsx, css, scss}\"",
-    "coverage": "npm test --coverage --watchAll"
+    "coverage": "npm test --coverage --watchAll",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -57,6 +58,7 @@
   },
   "devDependencies": {
     "msw": "^0.47.3",
-    "prettier": "2.7.1"
+    "prettier": "2.7.1",
+    "husky": "^8.0.0"
   }
 }
