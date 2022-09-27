@@ -543,3 +543,11 @@ Prettier is an opinionated code formatter that ensures that all outputted code c
 
 #### Husky
 Husky is a tool that helps improve your commits and more.
+
+Adds a pre-commit script out of the box.
+
+In our script we are ensuring before every commit the code has been checked for linting errors and if there are no errors the code has been formatted.
+
+Since format script is run as part of the pre-commit hook the file is formatted first and then we can go ahead and commit.
+
+With husky we can ensure developers cannot commit code that has linting errors and the code they commit is already formatted.
