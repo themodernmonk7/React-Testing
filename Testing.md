@@ -552,3 +552,6 @@ Since format script is run as part of the pre-commit hook the file is formatted 
 
 With husky we can ensure developers cannot commit code that has linting errors and the code they commit is already formatted.
 
+#### lint-staged
+Run linters (and formatters) against staged git files.
+
