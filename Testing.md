@@ -551,3 +551,4 @@ In our script we are ensuring before every commit the code has been checked for 
 Since format script is run as part of the pre-commit hook the file is formatted first and then we can go ahead and commit.
 
 With husky we can ensure developers cannot commit code that has linting errors and the code they commit is already formatted.
+
