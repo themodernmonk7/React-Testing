@@ -555,3 +555,51 @@ With husky we can ensure developers cannot commit code that has linting errors a
 #### lint-staged
 Run linters (and formatters) against staged git files.
 
+## Course Summary
+
+### 1st section summary
+- What is testing?
+- What is Jest and RTL?
+- Different types of tests
+- What is a automated test?
+- CRA project
+- Anatomy of test
+- First test
+- Test driven development
+
+### 2nd section summary
+- Jest watch mode
+- Filter tests
+- Group test
+- Filename convention
+- Code coverage
+- Assertion
+
+### 3rd section summary
+- Queries in RTL
+- Types of queries
+- Priority order of queries
+- getBy vs queryBy vs findBy
+- Manual queries
+- Debug tests
+- Testing playground
+
+### 4th section summary (Test components with user interactions)
+- Testing user interactions
+- Pointer APIs
+- Keyboard APIs
+
+### 5th section summary (Test components wrapped in a provider)
+- Providers
+- Custom render function
+- Custom react hooks
+
+### 6th section summary (Test components with mocking )
+- Mocking functions with jest
+- Mocking HTTP requests with MSW
+
+### 7th section summary (Static analysis testing)
+- ESlint
+- Prettier
+- Husky
+- lint-staged 
